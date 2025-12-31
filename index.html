@@ -266,127 +266,130 @@
         </div>
     </section>
     
-    <!-- ========================================
-         Innovation Model 区域 - 产品功能展示
-         中间显示机器人，四周展示核心功能
-         ======================================== -->
     <section id="innovation-model" class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- 标题 -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Innovation in Action</h2>
+        </div>
+
+        <div class="relative flex flex-col md:flex-row items-center justify-center gap-12">
+            
+            <!-- 左侧功能卡片 Left Feature Cards -->
+            <div class="flex-1 space-y-8 z-10">
+                <!-- 功能 1: 跌倒检测 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-right">
+                    <div class="text-blue-600 mb-2 flex justify-end">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Fall Detection</h3>
+                    <p class="text-slate-500 text-sm">Real-time risk monitoring and posture analysis to prevent injuries before they happen.</p>
+                </div>
+
+                <!-- 功能 2: 内置储物 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-right">
+                    <div class="text-blue-600 mb-2 flex justify-end">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Built-in Storage</h3>
+                    <p class="text-slate-500 text-sm">Ergonomic compartment for groceries, medicine, or personal items during outdoor walks.</p>
+                </div>
+            </div>
+
+            <!-- 中间：机器人图片 -->
+            <div class="flex-1 relative">
+                <!-- 背景光晕 -->
+                <div class="absolute inset-0 bg-blue-100 rounded-full blur-[100px] opacity-50 scale-75"></div>
+                
+                <!-- 机器人图片 -->
+                <div class="relative z-10">
+                    <img src="robot.png" alt="ElderGo Innovation Model" 
+                         class="relative z-10 w-full h-auto drop-shadow-2xl">
+                </div>
+            </div>
+
+            <!-- 右侧功能卡片 Right Feature Cards -->
+            <div class="flex-1 space-y-8 z-10">
+                <!-- 功能 3: 远程监控 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="text-blue-600 mb-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Remote Monitoring</h3>
+                    <p class="text-slate-500 text-sm">Families can track exercise status, heart rate, and location through a secure mobile app.</p>
+                </div>
+
+                <!-- 功能 4: 障碍避让 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="text-blue-600 mb-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Obstacle Avoidance</h3>
+                    <p class="text-slate-500 text-sm">Intelligent AI pathfinding ensures the robot navigates safely around curbs and pedestrians.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ========================================
+         技术架构展示区域 - 独立展示
+         展示原来的技术架构信息
+         ======================================== -->
+    <section id="architecture" class="py-24 bg-gradient-to-b from-blue-50 to-white">
         <div class="max-w-7xl mx-auto px-6">
-            <!-- 标题 -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">Innovation in Action</h2>
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Technical Architecture</h2>
                 
             </div>
 
-            <div class="relative flex flex-col md:flex-row items-center justify-center gap-12">
-                
-                <!-- 左侧功能卡片 Left Feature Cards -->
-                <div class="flex-1 space-y-8 z-10">
-                    <!-- 功能 1: 跌倒检测 -->
-                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-right">
-                        <div class="text-blue-600 mb-2 flex justify-end">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                            </svg>
+            <div class="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- 技术层级 1: 感知层 -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl border border-blue-50 hover:border-blue-200 transition">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-900 mb-2">Perception Layer</h4>
+                            <p class="text-slate-600">Uses depth camera to scan environment and posture, providing real‑time 3D data for risk assessment.</p>
                         </div>
-                        <h3 class="font-bold text-xl mb-1">Fall Detection</h3>
-                        <p class="text-slate-500 text-sm">Real-time risk monitoring and posture analysis to prevent injuries before they happen.</p>
                     </div>
 
-                    <!-- 功能 2: 内置储物 -->
-                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-right">
-                        <div class="text-blue-600 mb-2 flex justify-end">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                            </svg>
+                    <!-- 技术层级 2: 决策层 -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl border border-blue-50 hover:border-blue-200 transition">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-900 mb-2">Decision Layer</h4>
+                            <p class="text-slate-600">Processes sensor data with on‑board AI to identify risks and generate precise movement commands.</p>
                         </div>
-                        <h3 class="font-bold text-xl mb-1">Built-in Storage</h3>
-                        <p class="text-slate-500 text-sm">Ergonomic compartment for groceries, medicine, or personal items during outdoor walks.</p>
-                    </div>
-                </div>
-
-                <!-- 中间：机器人图片 + 技术架构弹窗 Center Robot with Tech Overlay -->
-                <div class="flex-1 relative" id="robot-container">
-                    <!-- 背景光晕 -->
-                    <div class="absolute inset-0 bg-blue-100 rounded-full blur-[100px] opacity-50 scale-75"></div>
-                    
-                    <!-- 机器人图片 -->
-                    <div class="relative z-10 cursor-pointer">
-                        <img src="robot.png" alt="ElderGo Innovation Model" 
-                             class="relative z-10 w-full h-auto drop-shadow-2xl transform hover:scale-105 transition duration-500">
                     </div>
 
-                    <!-- 技术架构弹窗 - 鼠标悬停时显示 -->
-                    <div class="tech-overlay absolute inset-0 z-20 flex items-center justify-center p-6">
-                        <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-blue-200 max-w-md">
-                            <h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">Technical Architecture</h3>
-                            
-                            <div class="space-y-4">
-                                <!-- 技术层级 1: 感知层 -->
-                                <div class="tech-layer flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-900 mb-1">Perception Layer</h4>
-                                        <p class="text-sm text-slate-600">Uses depth camera to scan environment and posture</p>
-                                    </div>
-                                </div>
+                    <!-- 技术层级 3: 执行层 -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl border border-blue-50 hover:border-blue-200 transition">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-900 mb-2">Action Layer</h4>
+                            <p class="text-slate-600">Executes smooth, responsive movement through high‑torque motors and dynamic balance control.</p>
+                        </div>
+                    </div>
 
-                                <!-- 技术层级 2: 决策层 -->
-                                <div class="tech-layer flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-900 mb-1">Decision Layer</h4>
-                                        <p class="text-sm text-slate-600">Processes data to identify risks and generate commands</p>
-                                    </div>
-                                </div>
-
-                                <!-- 技术层级 3: 执行层 -->
-                                <div class="tech-layer flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-900 mb-1">Action Layer</h4>
-                                        <p class="text-sm text-slate-600">Executes movement through motors</p>
-                                    </div>
-                                </div>
-
-                                <!-- 技术层级 4: 通信层 -->
-                                <div class="tech-layer flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-900 mb-1">Communication Layer</h4>
-                                        <p class="text-sm text-slate-600">Instantly alerts caregivers via 5G in emergencies</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- 技术层级 4: 通信层 -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl border border-blue-50 hover:border-blue-200 transition">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-900 mb-2">Communication Layer</h4>
+                            <p class="text-slate-600">Instantly alerts caregivers via 5G in emergencies and provides regular activity updates through a secure mobile app.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- 右侧功能卡片 Right Feature Cards -->
-                <div class="flex-1 space-y-8 z-10">
-                    <!-- 功能 3: 远程监控 -->
-                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                        <div class="text-blue-600 mb-2">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-bold text-xl mb-1">Remote Monitoring</h3>
-                        <p class="text-slate-500 text-sm">Families can track exercise status, heart rate, and location through a secure mobile app.</p>
-                    </div>
-
-                    <!-- 功能 4: 障碍避让 -->
-                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                        <div class="text-blue-600 mb-2">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-bold text-xl mb-1">Obstacle Avoidance</h3>
-                        <p class="text-slate-500 text-sm">Intelligent AI pathfinding ensures the robot navigates safely around curbs and pedestrians.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -625,54 +628,64 @@
             </div>
 
         <!-- ========================================
-         Team 区域 - 团队介绍
-         展示核心团队成员
-         ======================================== -->
-        <div>
+     Team 区域 - 团队介绍
+     展示核心团队成员
+     ======================================== -->
+<div>
 
-        </div>
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4 text-slate-900">The Aether Leadership</h2>
-            <p class="text-slate-600 mb-16">Multidisciplinary experts dedicated to mobility innovation.</p>
-            
-            <!-- 团队成员网格 -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <!-- 成员 1: CEO -->
-                <div class="group">
-                    <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 group-hover:bg-blue-100 transition duration-300"></div>
-                    <p class="font-bold text-slate-900">Siyuan Bin</p>
-                    <p class="text-blue-600 font-bold text-xs uppercase">CEO</p>
-                </div>
-                
-                <!-- 成员 2: CFO -->
-                <div class="group">
-                    <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 group-hover:bg-blue-100 transition duration-300"></div>
-                    <p class="font-bold text-slate-900">Xun Feng</p>
-                    <p class="text-blue-600 font-bold text-xs uppercase">CFO</p>
-                </div>
-                
-                <!-- 成员 3: CMO -->
-                <div class="group">
-                    <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 group-hover:bg-blue-100 transition duration-300"></div>
-                    <p class="font-bold text-slate-900">Enze Ma</p>
-                    <p class="text-blue-600 font-bold text-xs uppercase">CMO</p>
-                </div>
-                
-                <!-- 成员 4: CSO -->
-                <div class="group">
-                    <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 group-hover:bg-blue-100 transition duration-300"></div>
-                    <p class="font-bold text-slate-900">Guoren Liu</p>
-                    <p class="text-blue-600 font-bold text-xs uppercase">CSO</p>
-                </div>
-
-                <!-- 成员 5: CTO -->
-                <div class="group">
-                    <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 group-hover:bg-blue-100 transition duration-300"></div>
-                    <p class="font-bold text-slate-900">Yanlang Liu</p>
-                    <p class="text-blue-600 font-bold text-xs uppercase">CTO</p>
-                </div>
+</div>
+<div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-slate-900">The Aether Leadership</h2>
+    <p class="text-slate-600 mb-16">Multidisciplinary experts dedicated to mobility innovation.</p>
+    
+    <!-- 团队成员网格 -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <!-- 成员 1: CEO -->
+        <div class="group">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 overflow-hidden group-hover:bg-blue-100 transition duration-300">
+                <img src="1.png" alt="Siyuan Bin" class="w-full h-full object-cover">
             </div>
+            <p class="font-bold text-slate-900">Siyuan Bin</p>
+            <p class="text-blue-600 font-bold text-xs uppercase">CEO</p>
         </div>
+        
+        <!-- 成员 2: CFO -->
+        <div class="group">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 overflow-hidden group-hover:bg-blue-100 transition duration-300">
+                <img src="2.png" alt="Xun Feng" class="w-full h-full object-cover">
+            </div>
+            <p class="font-bold text-slate-900">Xun Feng</p>
+            <p class="text-blue-600 font-bold text-xs uppercase">CFO</p>
+        </div>
+        
+        <!-- 成员 3: CMO -->
+        <div class="group">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 overflow-hidden group-hover:bg-blue-100 transition duration-300">
+                <img src="3.png" alt="Enze Ma" class="w-full h-full object-cover">
+            </div>
+            <p class="font-bold text-slate-900">Enze Ma</p>
+            <p class="text-blue-600 font-bold text-xs uppercase">CMO</p>
+        </div>
+        
+        <!-- 成员 4: CSO -->
+        <div class="group">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 overflow-hidden group-hover:bg-blue-100 transition duration-300">
+                <img src="4.png" alt="Guoren Liu" class="w-full h-full object-cover">
+            </div>
+            <p class="font-bold text-slate-900">Guoren Liu</p>
+            <p class="text-blue-600 font-bold text-xs uppercase">CSO</p>
+        </div>
+
+        <!-- 成员 5: CTO -->
+        <div class="group">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl mx-auto mb-4 overflow-hidden group-hover:bg-blue-100 transition duration-300">
+                <img src="5.png" alt="Yanlang Liu" class="w-full h-full object-cover">
+            </div>
+            <p class="font-bold text-slate-900">Yanlang Liu</p>
+            <p class="text-blue-600 font-bold text-xs uppercase">CTO</p>
+        </div>
+    </div>
+</div>
     </section>
 
     
@@ -683,7 +696,7 @@
          ======================================== -->
     <footer class="py-12 bg-white border-t border-slate-100 text-center">
         <img src="logo.png" alt="Aether" class="h-8 mx-auto mb-4 opacity-50 grayscale hover:grayscale-0 transition">
-        <p class="text-slate-400 text-sm italic">&copy; 2025 Team Aether. Competition Showcase.</p>
+        
     </footer>
 
     <!-- ========================================
