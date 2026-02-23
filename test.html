@@ -394,6 +394,131 @@
         </div>
     </section>
 
+    <section id="monitoring-dashboard" class="py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-12 text-center">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Live Fleet Dashboard</h2>
+            <p class="text-lg text-slate-600">Real-time operational monitoring and analytics.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-500 mb-1">Fleet Status</div>
+                <div class="text-3xl font-bold text-slate-900">42/50</div>
+                <div class="text-xs text-emerald-500 mt-2 font-semibold">Online</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-500 mb-1">Active Users</div>
+                <div class="text-3xl font-bold text-[#43B4F0]">18</div>
+                <div class="text-xs text-slate-400 mt-2">Moving now</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-500 mb-1">Alerts</div>
+                <div class="text-3xl font-bold text-red-500">3</div>
+                <div class="text-xs text-slate-400 mt-2">Pending review</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-500 mb-1">Avg Battery</div>
+                <div class="text-3xl font-bold text-emerald-500">76%</div>
+                <div class="text-xs text-slate-400 mt-2">Healthy</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-500 mb-1">Total Time</div>
+                <div class="text-3xl font-bold text-[#1C3649]">124h</div>
+                <div class="text-xs text-slate-400 mt-2">Today</div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="md:col-span-2 bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden min-h-[400px] flex items-center justify-center relative">
+                <div class="absolute inset-0 bg-slate-50 flex items-center justify-center">
+                    <span class="text-slate-400 font-semibold">[ Interactive Map View ]</span>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-xl text-[#1C3649] mb-6 border-b border-slate-100 pb-4">Device Details</h3>
+                <div class="space-y-5">
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Device ID</span>
+                        <span class="font-bold text-slate-900">ElderGo-001</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Mode</span>
+                        <span class="px-3 py-1 bg-[#43B4F0]/10 text-[#43B4F0] rounded-md text-sm font-bold">Follow</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Speed</span>
+                        <span class="font-semibold text-slate-900">1.2 m/s</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Battery</span>
+                        <div class="flex items-center gap-3">
+                            <div class="w-16 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="w-4/5 h-full bg-emerald-500"></div>
+                            </div>
+                            <span class="font-semibold text-slate-900">80%</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Signal</span>
+                        <span class="font-semibold text-emerald-500">Strong</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-xl text-[#1C3649] mb-6">Alert Stream</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-red-50 border border-red-100 transition hover:shadow-md">
+                        <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></div>
+                        <div>
+                            <div class="font-bold text-red-900 text-lg">Fall Suspected</div>
+                            <div class="text-sm text-red-700 mt-1 font-medium">ElderGo-042</div>
+                            <div class="text-xs text-red-500 mt-2 uppercase tracking-wider font-bold">Just now</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-amber-50 border border-amber-100 transition hover:shadow-md">
+                        <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-amber-500 flex-shrink-0"></div>
+                        <div>
+                            <div class="font-bold text-amber-900 text-lg">Obstacle Avoidance</div>
+                            <div class="text-sm text-amber-700 mt-1 font-medium">ElderGo-018</div>
+                            <div class="text-xs text-amber-500 mt-2 uppercase tracking-wider font-bold">5 mins ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-xl text-[#1C3649] mb-6">Event Timeline</h3>
+                <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-5 h-5 rounded-full border-[3px] border-white bg-[#43B4F0] shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"></div>
+                        <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] bg-slate-50 p-5 rounded-2xl border border-slate-100 transition hover:shadow-md">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-bold text-slate-900">Alert Cleared</div>
+                                <div class="text-xs font-bold text-slate-400">10:42 AM</div>
+                            </div>
+                            <div class="text-sm text-slate-600">Operator verified false alarm.</div>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-5 h-5 rounded-full border-[3px] border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"></div>
+                        <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] bg-slate-50 p-5 rounded-2xl border border-slate-100 transition hover:shadow-md">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-bold text-slate-900">Motion Started</div>
+                                <div class="text-xs font-bold text-slate-400">09:15 AM</div>
+                            </div>
+                            <div class="text-sm text-slate-600">ElderGo-001 initiated Follow mode.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- ========================================
          Market 区域 - 市场规模
          展示美国和中国市场机会
