@@ -954,7 +954,7 @@ function buildTabs() {
             activeDeviceId = cfg.id;
             buildTabs();
             updateActiveDeviceUI();
-            leafMap.panTo([d.lat, d.lng], { animate: true, duration: 1 });
+            leafMap.panTo     ([d.lat, d.lng], { animate: true, duration: 1 });
         });
         tabBar.appendChild(tab);
     });
